@@ -1,0 +1,7 @@
+{
+  "demo-output.txt": "04632b20763e36df46078fd39ec4f63e56506253cbdf2bdb6afcd26c980ef477",
+  "package-output.txt": "56bdab0bbb6be0e0f064e7d81881dd7e0e214722b4465f920b1ca83486b693da",
+  "servlet-response.json": "bbc56360fc4fa976e115e3db47e4d5dd7732abb4a03dbea927b2df4e92eacb0a",
+  "test-output.txt": "877336373390c8ca1952a5c5ca9c2c67c92275cdce28e0305c517ddda278c67b",
+  "junit/TEST-org.example.CommercialPersistenceTest.xml": "af50c74144297f471d4bc7d33be89ef3701c38c3cc0ab3dd762922e96e708cb5"
+}

@@ -1,0 +1,11 @@
+target/
+.idea/
+.vscode/
+*.iml
+*.log
+*.mv.db
+*.trace.db
+
+node_modules/
+
+package-lock.json
