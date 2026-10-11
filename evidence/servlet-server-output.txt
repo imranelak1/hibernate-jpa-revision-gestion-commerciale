@@ -1,0 +1,58 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24055 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] ------------------< org.example:gestion-commerciale >-------------------
+[INFO] Building gestion-commerciale 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ gestion-commerciale ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ gestion-commerciale ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- exec:3.5.0:java (default-cli) @ gestion-commerciale ---
+[INFO] Loaded 50 auto-discovered prefixes for remote repository ow2-snapshot (prefixes-ow2-snapshot.txt)
+Oct 11, 2026 3:11:40 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.15.Final
+Oct 11, 2026 3:11:41 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Oct 11, 2026 3:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Oct 11, 2026 3:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:revision;DB_CLOSE_DELAY=-1]
+Oct 11, 2026 3:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+Oct 11, 2026 3:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Oct 11, 2026 3:11:42 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Oct 11, 2026 3:11:43 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Oct 11, 2026 3:11:47 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@689eee6a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Oct 11, 2026 3:11:47 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@23aa4efc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Oct 11, 2026 3:11:47 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+REVISION — GESTION COMMERCIALE : CRUD, CRITERIA, JOINED, CLE COMPOSEE
+Categorie creee : Categorie{id=1, nom='Informatique'}
+Produits par categorie : [1 Clavier 49.99 DH, 2 Souris 20.00 DH]
+Recherche nommee CLAV : [1 Clavier 49.99 DH]
+Criteria prix 10..50 : [1 Clavier 49.99 DH, 2 Souris 20.00 DH]
+Pagination page 2 taille 2 : [3 Stylo 1.20 DH]
+Heritage JOINED : [Client:Imrane, Fournisseur:Toubkal]
+Commande 1 : 3 lignes a cle composee persistantes
+Rollback : Erreur simulee ; categories restantes=2
+Rapport Criteria septembre 2026 : [VenteCategorie[categorie=Informatique, chiffreAffaires=249.97], VenteCategorie[categorie=Papeterie, chiffreAffaires=12.00]]
+2026-10-11 15:11:49.230:INFO::org.example.App.main(): Logging initialized @16667ms to org.eclipse.jetty.util.log.StdErrLog
+2026-10-11 15:11:49.574:INFO:oejs.Server:org.example.App.main(): jetty-9.4.56.v20240826; built: 2024-08-26T17:15:05.868Z; git: ec6782ff5ead824dabdcf47fa98f90a4aedff401; jvm 17.0.20.1+1-1-deb12u1-Debian
+2026-10-11 15:11:49.710:INFO:oejsh.ContextHandler:org.example.App.main(): Started o.e.j.s.ServletContextHandler@5b22a8d9{/,null,AVAILABLE}
+2026-10-11 15:11:49.770:INFO:oejs.AbstractConnector:org.example.App.main(): Started ServerConnector@329fcc66{HTTP/1.1, (http/1.1)}{0.0.0.0:8087}
+2026-10-11 15:11:49.791:INFO:oejs.Server:org.example.App.main(): Started @17228ms
+Servlet GET /rapport-ventes : HTTP 200
+{"mois":"2026-09","ventes":[{"categorie":"Informatique","chiffreAffaires":249.97},{"categorie":"Papeterie","chiffreAffaires":12.00}]}
+Serveur disponible : http://127.0.0.1:8087/rapport-ventes?date=2026-10-11 ; Ctrl+C pour arreter.

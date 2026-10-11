@@ -25,6 +25,8 @@ Le rapport est disponible sur [localhost:8087](http://127.0.0.1:8087/rapport-ven
 
 Les 7 tests passent. La démo affiche le CRUD, un rollback et le rapport de septembre 2026 : 249,97 pour l'informatique et 12,00 pour la papeterie. Les sorties d'exécution sont dans [evidence](evidence/).
 
+Les captures de la démo et des tests viennent d’exécutions réelles dans le terminal.
+
 ![Résultats](screenshots/results.png)
 
 ![Tests](screenshots/tests.png)

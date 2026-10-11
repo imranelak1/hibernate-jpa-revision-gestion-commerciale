@@ -1,0 +1,10 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   133  100   133    0     0  32871      0 --:--:-- --:--:-- --:--:-- 44333
+HTTP/1.1 200 OK
+Date: Sun, 11 Oct 2026 14:11:50 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 133
+Server: Jetty(9.4.56.v20240826)
+
+{"mois":"2026-09","ventes":[{"categorie":"Informatique","chiffreAffaires":249.97},{"categorie":"Papeterie","chiffreAffaires":12.00}]}
